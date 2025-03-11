@@ -86,20 +86,26 @@ Assign the result to a variable named swappedString.
 //Starter Code
 // Task 1
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint = 0; // indicates the C since start with 0
+let thirdCodePoint = 1; // indicates the o since start with 0
+let sumCodePoints = inputString1.charCodeAt(firstCodePoint) + inputString1.charCodeAt(thirdCodePoint); // adds the codepoints together (67 +111)
+
 
 // Task 2
-let wordFromCodePoints; // Your code here
+let codePoint1 = 68; // D
+let codePoint2 = 72; // H
+let codePoint3 = 33; // !
+let newWord = String.fromCharCode(codePoint1) + String.fromCharCode(codePoint2) + String.fromCharCode(codePoint3); // D + H + !
 
 // Task 3
-let inputString2 = "Launch";
-let swappedString; // Your code here
+let inputString = "Launch";
+let codePoint4 = 0; // denotes the L character
+let codePoint5 = 1; // denotes the a character
+let swappedString = Math.abs(inputString.charCodeAt(codePoint4) - inputString.charCodeAt(codePoint5)); // absolute value of difference between the code points L & a
 
 // Log all results
 console.log({
-  firstCodePoint,
-  thirdCodePoint,
-  wordFromCodePoints,
+  sumCodePoints,
+  newWord,
   swappedString,
 });
