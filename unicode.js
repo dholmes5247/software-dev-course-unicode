@@ -43,7 +43,8 @@ Calculate the absolute difference between the two code points and assign it to a
 Input:
 let inputString = "Cat";
 let index1 = 0;
-let index2 = 2;
+let 
+index2 = 2;
 
 Expected Output:
 codePointDifference: 16 // 'C' = 67, 't' = 116, |67 - 116| = 16
@@ -92,16 +93,17 @@ let sumCodePoints = inputString1.charCodeAt(firstCodePoint) + inputString1.charC
 
 
 // Task 2
-let codePoint1 = 68; // D
-let codePoint2 = 72; // H
-let codePoint3 = 33; // !
-let newWord = String.fromCharCode(codePoint1) + String.fromCharCode(codePoint2) + String.fromCharCode(codePoint3); // D + H + !
+let codePoint1 = 72; // H
+let codePoint2 = 101; // e
+let codePoint3 = 108; // l
+let codePoint4 = 108; // l
+let newWord = String.fromCharCode(codePoint1) + String.fromCharCode(codePoint2) + String.fromCharCode(codePoint3) + String.fromCharCode(codePoint4); // Hell
 
 // Task 3
 let inputString = "Launch";
-let codePoint4 = 0; // denotes the L character
-let codePoint5 = 1; // denotes the a character
-let swappedString = Math.abs(inputString.charCodeAt(codePoint4) - inputString.charCodeAt(codePoint5)); // absolute value of difference between the code points L & a
+let codePoint5 = 0; // denotes the L character
+let codePoint6 = 5; // denotes the a character
+let swappedString = Math.abs(inputString.charCodeAt(codePoint5) - inputString.charCodeAt(codePoint6)); // absolute value of difference between the code points L & e
 
 // Log all results
 console.log({
